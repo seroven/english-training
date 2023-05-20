@@ -4,13 +4,7 @@ import { VocabularyMenuComponent } from './vocabulary-menu/vocabulary-menu.compo
 import { VocabularyListComponent } from './vocabulary-list/vocabulary-list.component';
 import { VocabularyGameComponent } from './vocabulary-game/vocabulary-game.component';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [
-  {
-    path: "",
-    component: VocabularyMenuComponent,
-  }
-]
+import { vocabularyRoutes } from 'src/routes/routes';
 
 @NgModule({
   declarations: [
@@ -20,7 +14,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    RouterModule.forChild(vocabularyRoutes),
   ]
 })
 export class VocabularyModule { }
