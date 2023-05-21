@@ -1,1 +1,18 @@
-<p>vocabulary-menu works!</p>
+<div class="container-center container-all-viewport">
+  <div class="container-reduce-viewport flex flex-col items-center">
+    <div class="w-3/4 relative">
+      <!-- <p-button label="Return" styleClass="p-button-secondary" class="absolute left-0 flex justify-items-center">
+        <i class="pi pi-angle-left mr-1"></i>
+      </p-button> -->
+      <h1 class="text-6xl text-center font-aristia">Vocabulary</h1>
+    </div>
+    <div class="container-grid w-3/4 overflow-auto my-4">
+      <div class="container-grid-item font-valera text-3xl font-semibold" *ngFor="let group of groups">
+        <div class="container-grid-item-bg"></div>
+        <span>
+          {{group}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

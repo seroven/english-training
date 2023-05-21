@@ -5,7 +5,7 @@ import { VocabularyListComponent } from './vocabulary-list/vocabulary-list.compo
 import { VocabularyGameComponent } from './vocabulary-game/vocabulary-game.component';
 import { RouterModule, Routes } from '@angular/router';
 import { vocabularyRoutes } from 'src/routes/routes';
-
+import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     VocabularyMenuComponent,
@@ -15,6 +15,7 @@ import { vocabularyRoutes } from 'src/routes/routes';
   imports: [
     CommonModule,
     RouterModule.forChild(vocabularyRoutes),
+    ButtonModule
   ]
 })
 export class VocabularyModule { }

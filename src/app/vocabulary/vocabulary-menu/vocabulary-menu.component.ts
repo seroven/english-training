@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class VocabularyMenuComponent {
 
+  groups:String[] = ["Clothes", "Family", "Fruits", "Clothes", "Family", "Fruits", "Clothes", "Family", "Fruits", "Clothes", "Family", "Fruits"]
+
 }
